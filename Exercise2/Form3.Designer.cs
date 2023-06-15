@@ -1,6 +1,6 @@
 ﻿namespace Exercise2
 {
-    partial class Form1
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.prodiTIDataSet = new Exercise2.ProdiTIDataSet();
-            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mahasiswaTableAdapter = new Exercise2.ProdiTIDataSetTableAdapters.MahasiswaTableAdapter();
-            this.nIMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alamatMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.prodiTIDataSet1 = new Exercise2.ProdiTIDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -54,112 +51,97 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.prodiTIDataSet11 = new Exercise2.ProdiTIDataSet1();
+            this.nilaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nilaiTableAdapter = new Exercise2.ProdiTIDataSet1TableAdapters.NilaiTableAdapter();
+            this.nilaiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.nilaiBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.nilaiBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Minecrafter", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(192, 65);
+            this.linkLabel1.Location = new System.Drawing.Point(192, 41);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(429, 38);
+            this.linkLabel1.Size = new System.Drawing.Size(432, 38);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Data Mahasiswa";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabel1.Text = "Nilai Mahasiswa";
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nIMDataGridViewTextBoxColumn,
-            this.namaMhsDataGridViewTextBoxColumn,
-            this.alamatMhsDataGridViewTextBoxColumn,
-            this.sexDataGridViewTextBoxColumn,
-            this.phoneMhsDataGridViewTextBoxColumn,
-            this.iDUserDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mahasiswaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(75, 130);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 214);
-            this.dataGridView1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(91, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nim";
             // 
-            // prodiTIDataSet
+            // label2
             // 
-            this.prodiTIDataSet.DataSetName = "ProdiTIDataSet";
-            this.prodiTIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(91, 182);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Kode Mata Kuliah";
             // 
-            // mahasiswaBindingSource
+            // label3
             // 
-            this.mahasiswaBindingSource.DataMember = "Mahasiswa";
-            this.mahasiswaBindingSource.DataSource = this.prodiTIDataSet;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(91, 241);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 16);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Nilai";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // mahasiswaTableAdapter
+            // textBox1
             // 
-            this.mahasiswaTableAdapter.ClearBeforeFill = true;
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource, "NIM", true));
+            this.textBox1.Location = new System.Drawing.Point(254, 106);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 4;
             // 
-            // nIMDataGridViewTextBoxColumn
+            // textBox2
             // 
-            this.nIMDataGridViewTextBoxColumn.DataPropertyName = "NIM";
-            this.nIMDataGridViewTextBoxColumn.HeaderText = "NIM";
-            this.nIMDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nIMDataGridViewTextBoxColumn.Name = "nIMDataGridViewTextBoxColumn";
-            this.nIMDataGridViewTextBoxColumn.Width = 125;
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource1, "KodeMK", true));
+            this.textBox2.Location = new System.Drawing.Point(254, 176);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 5;
             // 
-            // namaMhsDataGridViewTextBoxColumn
+            // textBox3
             // 
-            this.namaMhsDataGridViewTextBoxColumn.DataPropertyName = "NamaMhs";
-            this.namaMhsDataGridViewTextBoxColumn.HeaderText = "NamaMhs";
-            this.namaMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.namaMhsDataGridViewTextBoxColumn.Name = "namaMhsDataGridViewTextBoxColumn";
-            this.namaMhsDataGridViewTextBoxColumn.Width = 125;
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource2, "Nilai", true));
+            this.textBox3.Location = new System.Drawing.Point(254, 238);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 6;
             // 
-            // alamatMhsDataGridViewTextBoxColumn
+            // prodiTIDataSet1
             // 
-            this.alamatMhsDataGridViewTextBoxColumn.DataPropertyName = "AlamatMhs";
-            this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "AlamatMhs";
-            this.alamatMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.alamatMhsDataGridViewTextBoxColumn.Name = "alamatMhsDataGridViewTextBoxColumn";
-            this.alamatMhsDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
-            this.sexDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phoneMhsDataGridViewTextBoxColumn
-            // 
-            this.phoneMhsDataGridViewTextBoxColumn.DataPropertyName = "PhoneMhs";
-            this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "PhoneMhs";
-            this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
-            this.phoneMhsDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // iDUserDataGridViewTextBoxColumn
-            // 
-            this.iDUserDataGridViewTextBoxColumn.DataPropertyName = "IDUser";
-            this.iDUserDataGridViewTextBoxColumn.HeaderText = "IDUser";
-            this.iDUserDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDUserDataGridViewTextBoxColumn.Name = "iDUserDataGridViewTextBoxColumn";
-            this.iDUserDataGridViewTextBoxColumn.Width = 125;
+            this.prodiTIDataSet1.DataSetName = "ProdiTIDataSet";
+            this.prodiTIDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.BindingSource = this.mahasiswaBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -182,8 +164,8 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(826, 27);
-            this.bindingNavigator1.TabIndex = 2;
+            this.bindingNavigator1.Size = new System.Drawing.Size(800, 27);
+            this.bindingNavigator1.TabIndex = 7;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
@@ -272,39 +254,92 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // bindingSource1
+            // label4
             // 
-            this.bindingSource1.DataSource = this.mahasiswaBindingSource;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(91, 302);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Periode";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource3, "IDPeriode", true));
+            this.textBox4.Location = new System.Drawing.Point(254, 302);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.TabIndex = 9;
+            // 
+            // prodiTIDataSet11
+            // 
+            this.prodiTIDataSet11.DataSetName = "ProdiTIDataSet1";
+            this.prodiTIDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nilaiBindingSource
+            // 
+            this.nilaiBindingSource.DataMember = "Nilai";
+            this.nilaiBindingSource.DataSource = this.prodiTIDataSet11;
+            // 
+            // nilaiTableAdapter
+            // 
+            this.nilaiTableAdapter.ClearBeforeFill = true;
+            // 
+            // nilaiBindingSource1
+            // 
+            this.nilaiBindingSource1.DataMember = "Nilai";
+            this.nilaiBindingSource1.DataSource = this.prodiTIDataSet11;
+            // 
+            // nilaiBindingSource2
+            // 
+            this.nilaiBindingSource2.DataMember = "Nilai";
+            this.nilaiBindingSource2.DataSource = this.prodiTIDataSet11;
+            // 
+            // nilaiBindingSource3
+            // 
+            this.nilaiBindingSource3.DataMember = "Nilai";
+            this.nilaiBindingSource3.DataSource = this.prodiTIDataSet11;
             // 
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(75, 371);
+            this.button1.Location = new System.Drawing.Point(94, 361);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 67);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Form3";
             this.Text = "Teknologi Informasi UMY";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
+            this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,16 +348,13 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private ProdiTIDataSet prodiTIDataSet;
-        private System.Windows.Forms.BindingSource mahasiswaBindingSource;
-        private ProdiTIDataSetTableAdapters.MahasiswaTableAdapter mahasiswaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nIMDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn namaMhsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn alamatMhsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneMhsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDUserDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private ProdiTIDataSet prodiTIDataSet1;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -336,7 +368,14 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox4;
+        private ProdiTIDataSet1 prodiTIDataSet11;
+        private System.Windows.Forms.BindingSource nilaiBindingSource;
+        private ProdiTIDataSet1TableAdapters.NilaiTableAdapter nilaiTableAdapter;
+        private System.Windows.Forms.BindingSource nilaiBindingSource1;
+        private System.Windows.Forms.BindingSource nilaiBindingSource2;
+        private System.Windows.Forms.BindingSource nilaiBindingSource3;
         private System.Windows.Forms.Button button1;
     }
 }
-
